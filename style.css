@@ -40,4 +40,11 @@ ul {
 .objectives p {
   font-size: 1.4rem;
 }
+
+.interactive-maps {
+  display: inline-block;
+  margin: 0 auto;
+  width: 1000;
+  height: 700;
+}
 /*# sourceMappingURL=style.css.map */

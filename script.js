@@ -12,7 +12,7 @@ const graph = svg
 
 const projection = d3
   .geoAlbersUsa()
-  .translate([1000 / 2, 1000 / 2])
+  .translate([1000 / 2 + 75, 1000 / 2 - 150])
   .scale([1000]);
 
 const geoGenerator = d3.geoPath(projection);
