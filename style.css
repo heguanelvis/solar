@@ -1,0 +1,43 @@
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Crimson Text', serif;
+*/
+body {
+  font-family: "Crimson Text", serif !important;
+  color: #003049;
+  background: rgba(234, 226, 183, 0.2);
+}
+
+.jumbotron {
+  background: #eae2b7;
+  -webkit-box-shadow: 3px 6px rgba(234, 226, 183, 0.5);
+          box-shadow: 3px 6px rgba(234, 226, 183, 0.5);
+}
+
+.jumbotron h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: 2.8rem !important;
+  font-weight: 700;
+}
+
+.jumbotron h1 .fa-sun {
+  color: #f77f00;
+}
+
+.jumbotron .lead {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+ul {
+  font-size: 1.4rem;
+}
+
+.objectives p {
+  font-size: 1.4rem;
+}
+/*# sourceMappingURL=style.css.map */

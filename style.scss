@@ -1,0 +1,50 @@
+$color1: rgba(0, 48, 73, 1);
+$color2: rgba(214, 40, 40, 1);
+$color3: rgba(247, 127, 0, 1);
+$color4: rgba(252, 191, 73, 1);
+$color5: rgba(234, 226, 183, 1);
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Crimson Text', serif;
+*/
+$comfortaa: 'Comfortaa', cursive;
+$crimson: 'Crimson Text', serif;
+
+body {
+    font-family: $crimson !important;
+    color: $color1;
+    background: rgba(234, 226, 183, 0.2);
+}
+
+.jumbotron {
+    background: $color5;
+    box-shadow: 3px 6px rgba(234, 226, 183, 0.5);
+
+    h1 {
+        font-family: $comfortaa;
+        font-size: 2.8rem !important;
+        font-weight: 700;
+        .fa-sun {
+            color: $color3;
+        }
+    }
+
+    .lead {
+        font-size: 1.4rem;
+    }
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+ul {
+    font-size: 1.4rem;
+}
+
+.objectives {
+    p {
+        font-size: 1.4rem;
+    }
+}
