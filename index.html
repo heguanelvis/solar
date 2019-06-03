@@ -78,7 +78,8 @@
         </div>
 
         <hr>
-        <div class="maps">
+
+        <div class="static-maps">
             <h2>Map Analyses:</h2>
             <div class="map-ovewview">
                 <img src="images/overview.png" class="img-fluid" alt="Overview Map">
@@ -88,12 +89,19 @@
                 <img src="images/production.png" class="img-fluid" alt="Production Map">
             </div>
 
-            <div class="map-production">
+            <div class="map-resource">
                 <img src="images/resource.png" class="img-fluid" alt="Resource Map">
             </div>
 
-            <div class="map-production">
+            <div class="map-ratio">
                 <img src="images/ratio.png" class="img-fluid" alt="Ratio Map">
+            </div>
+        </div>
+
+        <div class="interactive-maps">
+            <h2>Interactive Maps</h2>
+            <div id="canvas">
+                
             </div>
         </div>
     </div>
@@ -107,6 +115,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
