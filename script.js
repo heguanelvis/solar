@@ -17,16 +17,15 @@ const projection = d3
 
 const geoGenerator = d3.geoPath(projection);
 
-graph
-  .selectAll("path")
-  // .data(this.dataStates.features)
-  // .enter()
-  .append("path")
-  .attr("d", geoGenerator)
-  .style("stroke", "black")
-  .style("stroke-width", 2)
-  .attr("fill", "red");
-
 d3.json("data/us_states.json").then(data => {
   console.log(data);
+  graph
+    .selectAll("path")
+    .data(data.features)
+    .enter()
+    .append("path")
+    .attr("d", geoGenerator)
+    .style("stroke", "black")
+    .style("stroke-width", 2)
+    .attr("fill", "red");
 });
