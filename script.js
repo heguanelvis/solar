@@ -12,12 +12,19 @@ const graph = svg
 
 const projection = d3
   .geoAlbersUsa()
-  .translate([1000 / 2 + 30, 1000 / 2 - 150])
+  .translate([1000 / 2 + 20, 1000 / 2 - 230])
   .scale([1000]);
 
 const geoGenerator = d3.geoPath(projection);
 
+graph.selectAll("path").remove();
+d3.json("data/us_states.json").then(data => {
+  document.querySelector(".production-btn").classList.add("btn-map-active");
+  productionGraph(data);
+});
+
 document.querySelector(".production-btn").addEventListener("click", () => {
+  document.querySelector(".production-btn").classList.remove("btn-map-active");
   graph.selectAll("path").remove();
   d3.json("data/us_states.json").then(data => {
     productionGraph(data);
@@ -25,6 +32,7 @@ document.querySelector(".production-btn").addEventListener("click", () => {
 });
 
 document.querySelector(".potential-btn").addEventListener("click", () => {
+  document.querySelector(".production-btn").classList.remove("btn-map-active");
   graph.selectAll("path").remove();
   d3.json("data/us_states.json").then(data => {
     potentialGraph(data);
@@ -32,10 +40,10 @@ document.querySelector(".potential-btn").addEventListener("click", () => {
 });
 
 document.querySelector(".ratio-btn").addEventListener("click", () => {
+  document.querySelector(".production-btn").classList.remove("btn-map-active");
   graph.selectAll("path").remove();
   d3.json("data/us_states.json").then(data => {
     ratioGraph(data);
-    // 0.0001037694, 11.9273356354
   });
 });
 

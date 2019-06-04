@@ -30,32 +30,62 @@ body {
     }
 
     .lead {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.1rem;
     font-weight: 700;
 }
 
 ul {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .objectives {
     p {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 }
 
 .tip-style {
-    background: rgba(0, 48, 73, 0.8);
+    background: $color1;
     color: $color5;
+    font-weight: 700;
     text-align: center;
     border-radius: 10%;
 }
 
+.btn-map {
+    background: none;
+    color: $color1;
+    border: $color1 2px solid;
+    font-weight: 700;
+    font-size: 1.5rem;
+    outline: 0 !important;
+
+    &:hover, &:active, &:focus {
+        background: $color1;
+        color: $color5;
+        border: rgba(234, 226, 183, 0.2) 2px solid;
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+.btn-map-active {
+    background: $color1 !important;
+    color: $color5 !important;
+    border: rgba(234, 226, 183, 0.2) 2px solid !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .pointer {
     cursor: pointer;
+}
+
+hr {
+    border-top: rgba(234, 226, 183, 0.5) 2px solid;
 }
