@@ -12,7 +12,7 @@ const graph = svg
 
 const projection = d3
   .geoAlbersUsa()
-  .translate([1000 / 2 + 20, 1000 / 2 - 230])
+  .translate([1000 / 2 + 25, 1000 / 2 - 230])
   .scale([1000]);
 
 const geoGenerator = d3.geoPath(projection);
@@ -126,7 +126,7 @@ function handleMouseOverA(d, i, n) {
     .attr("y", centroid[1] - 80)
     .html(() => {
       let content = `<div class="tip-style"><div>${d.properties.state}</div>`;
-      content += `<div>${d.properties.solar_electricity}</div></div>`;
+      content += `<div>${d.properties.solar_electricity} mWh/y</div></div>`;
       return content;
     });
 }
@@ -152,7 +152,9 @@ function handleMouseOverB(d, i, n) {
     .attr("y", centroid[1] - 80)
     .html(() => {
       let content = `<div class="tip-style"><div>${d.properties.state}</div>`;
-      content += `<div>${d.properties.annual_sunlight_radiation}</div></div>`;
+      content += `<div>${Math.round(
+        d.properties.annual_sunlight_radiation
+      )} mWh/y</div></div>`;
       return content;
     });
 }
