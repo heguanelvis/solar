@@ -7,91 +7,100 @@ $color5: rgba(234, 226, 183, 1);
 font-family: 'Comfortaa', cursive;
 font-family: 'Crimson Text', serif;
 */
-$comfortaa: 'Comfortaa', cursive;
-$crimson: 'Crimson Text', serif;
+$comfortaa: "Comfortaa", cursive;
+$crimson: "Crimson Text", serif;
 
 body {
-    font-family: $crimson !important;
-    color: $color1;
-    background: rgba(234, 226, 183, 0.2);
+  font-family: $crimson !important;
+  color: $color1;
+  background: rgba(234, 226, 183, 0.2);
 }
 
 .jumbotron {
-    background: $color5;
-    box-shadow: 3px 6px rgba(234, 226, 183, 0.5);
+  background: $color5;
+  box-shadow: 3px 6px rgba(234, 226, 183, 0.5);
 
-    h1 {
-        font-family: $comfortaa;
-        font-size: 2.4rem !important;
-        font-weight: 700;
-        .fa-sun {
-            color: $color3;
-        }
+  h1 {
+    font-family: $comfortaa;
+    font-size: 2.4rem !important;
+    font-weight: 700;
+    .fa-sun {
+      color: $color3;
     }
+  }
 
-    .lead {
-        font-size: 1.7rem;
-    }
+  .lead {
+    font-size: 1.7rem;
+  }
 }
 
 h2 {
-    font-size: 2.1rem;
-    font-weight: 700;
+  font-size: 2.1rem;
+  font-weight: 700;
 }
 
 ul {
-    font-size: 1.7rem;
-    a {
-        color: $color3;
-        &:hover, &:active, &:focus {
-            color: $color4;
-        }
+  font-size: 1.7rem;
+  a {
+    color: $color3;
+    font-weight: 700;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color4;
     }
+  }
 }
 
 .objectives {
-    p {
-        font-size: 1.7rem;
-    }
+  p {
+    font-size: 1.7rem;
+  }
 }
 
 .tip-style {
-    background: $color1;
-    color: $color5;
-    font-weight: 700;
-    text-align: center;
-    border-radius: 10%;
+  background: $color1;
+  color: $color5;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10%;
 }
 
 .btn-map {
-    background: none;
-    color: $color1;
-    border: $color1 2px solid;
-    font-weight: 700;
-    font-size: 1.5rem;
-    outline: 0 !important;
+  background: none;
+  color: $color1;
+  border: $color1 2px solid;
+  font-weight: 700;
+  font-size: 1.5rem;
+  outline: 0 !important;
 
-    &:hover, &:active, &:focus {
-        background: $color1;
-        color: $color5;
-        border: rgba(234, 226, 183, 0.2) 2px solid;
-        outline: none;
-        box-shadow: none;
-    }
+  &:hover,
+  &:active,
+  &:focus {
+    background: $color1;
+    color: $color5;
+    border: rgba(234, 226, 183, 0.2) 2px solid;
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 .btn-map-active {
-    background: $color1 !important;
-    color: $color5 !important;
-    border: rgba(234, 226, 183, 0.2) 2px solid !important;
-    outline: none !important;
-    box-shadow: none !important;
+  background: $color1 !important;
+  color: $color5 !important;
+  border: rgba(234, 226, 183, 0.2) 2px solid !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 hr {
-    border-top: rgba(234, 226, 183, 0.5) 2px solid;
+  border-top: rgba(234, 226, 183, 0.5) 2px solid;
+}
+
+b {
+  color: $color3;
 }

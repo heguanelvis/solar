@@ -39,6 +39,7 @@ ul {
 
 ul a {
   color: #f77f00;
+  font-weight: 700;
 }
 
 ul a:hover, ul a:active, ul a:focus {
@@ -90,5 +91,9 @@ ul a:hover, ul a:active, ul a:focus {
 
 hr {
   border-top: rgba(234, 226, 183, 0.5) 2px solid;
+}
+
+b {
+  color: #f77f00;
 }
 /*# sourceMappingURL=style.css.map */

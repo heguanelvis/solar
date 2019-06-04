@@ -51,7 +51,7 @@ function productionGraph(data) {
   elecThresHold = d3
     .scaleThreshold()
     .domain([0, 5, 50, 1000, 18000, 30000])
-    .range(["#ffffff", "#fffac6", "#fff486", "#fcee21", "#f9c524"]);
+    .range(["#000000", "#ffeff1", "#f3bab1", "#df8773", "#c6513a", "#a70000"]);
 
   mapPath = graph
     .selectAll("path")
@@ -95,7 +95,7 @@ function ratioGraph(data) {
   ratiThresHold = d3
     .scaleThreshold()
     .domain([0.0001, 0.01, 0.05, 0.5, 2, 12])
-    .range(["#ffffff", "#fffac6", "#fff486", "#fcee21", "#f9c524"]);
+    .range(["#000000", "#f0f7da", "#b9caa7", "#869f77", "#53744a", "#234d20"]);
 
   mapPath = graph
     .selectAll("path")
