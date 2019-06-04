@@ -47,4 +47,8 @@ ul {
   text-align: center;
   border-radius: 10%;
 }
+
+.pointer {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

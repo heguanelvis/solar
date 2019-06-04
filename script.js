@@ -12,14 +12,34 @@ const graph = svg
 
 const projection = d3
   .geoAlbersUsa()
-  .translate([1000 / 2 + 75, 1000 / 2 - 150])
+  .translate([1000 / 2 + 30, 1000 / 2 - 150])
   .scale([1000]);
 
 const geoGenerator = d3.geoPath(projection);
 
-d3.json("data/us_states.json").then(data => {
-  console.log(d3.extent(data.features, d => d.properties.solar_electricity));
+document.querySelector(".production-btn").addEventListener("click", () => {
+  graph.selectAll("path").remove();
+  d3.json("data/us_states.json").then(data => {
+    productionGraph(data);
+  });
+});
 
+document.querySelector(".potential-btn").addEventListener("click", () => {
+  graph.selectAll("path").remove();
+  d3.json("data/us_states.json").then(data => {
+    potentialGraph(data);
+  });
+});
+
+document.querySelector(".ratio-btn").addEventListener("click", () => {
+  graph.selectAll("path").remove();
+  d3.json("data/us_states.json").then(data => {
+    ratioGraph(data);
+    // 0.0001037694, 11.9273356354
+  });
+});
+
+function productionGraph(data) {
   elecThresHold = d3
     .scaleThreshold()
     .domain([0, 5, 50, 1000, 18000, 30000])
@@ -33,16 +53,60 @@ d3.json("data/us_states.json").then(data => {
     .attr("d", geoGenerator)
     .style("stroke", "black")
     .style("stroke-width", 2)
+    .attr("class", "pointer")
     .attr("fill", d => elecThresHold(d.properties.solar_electricity));
 
   mapPath
-    .on("mouseover", handleMouseOver.bind(this))
-    .on("mouseout", handleMouseOut.bind(this));
-});
+    .on("mouseover", handleMouseOverA.bind(this))
+    .on("mouseout", handleMouseOutA.bind(this));
+}
 
-function handleMouseOver(d, i, n) {
+function potentialGraph(data) {
+  poteThresHold = d3
+    .scaleThreshold()
+    .domain([550, 1400, 1550, 1750, 1900, 2100])
+    .range(["#ffffff", "#fffac6", "#fff486", "#fcee21", "#f9c524"]);
+
+  mapPath = graph
+    .selectAll("path")
+    .data(data.features)
+    .enter()
+    .append("path")
+    .attr("d", geoGenerator)
+    .style("stroke", "black")
+    .style("stroke-width", 2)
+    .attr("class", "pointer")
+    .attr("fill", d => poteThresHold(d.properties.annual_sunlight_radiation));
+
+  mapPath
+    .on("mouseover", handleMouseOverB.bind(this))
+    .on("mouseout", handleMouseOutB.bind(this));
+}
+
+function ratioGraph(data) {
+  ratiThresHold = d3
+    .scaleThreshold()
+    .domain([0.0001, 0.01, 0.05, 0.5, 2, 12])
+    .range(["#ffffff", "#fffac6", "#fff486", "#fcee21", "#f9c524"]);
+
+  mapPath = graph
+    .selectAll("path")
+    .data(data.features)
+    .enter()
+    .append("path")
+    .attr("d", geoGenerator)
+    .style("stroke", "black")
+    .style("stroke-width", 2)
+    .attr("class", "pointer")
+    .attr("fill", d => ratiThresHold(d.properties.elec_produce_ratio));
+
+  mapPath
+    .on("mouseover", handleMouseOverC.bind(this))
+    .on("mouseout", handleMouseOutC.bind(this));
+}
+
+function handleMouseOverA(d, i, n) {
   const centroid = geoGenerator.centroid(d);
-
   d3.select(n[i]).attr("fill", "white");
 
   tooltip = graph
@@ -59,10 +123,84 @@ function handleMouseOver(d, i, n) {
     });
 }
 
-function handleMouseOut(d, i, n) {
+function handleMouseOutA(d, i, n) {
   d3.select(n[i]).attr("fill", d =>
     elecThresHold(d.properties.solar_electricity)
   );
 
   d3.select(`#t-${d.properties.land_area_sq_km}-${i}`).remove();
 }
+
+function handleMouseOverB(d, i, n) {
+  const centroid = geoGenerator.centroid(d);
+  d3.select(n[i]).attr("fill", "white");
+
+  tooltip = graph
+    .append("foreignObject")
+    .attr("width", 120)
+    .attr("height", 54)
+    .attr("id", `t-${d.properties.land_area_sq_km}-${i}`)
+    .attr("x", centroid[0])
+    .attr("y", centroid[1] - 80)
+    .html(() => {
+      let content = `<div class="tip-style"><div>${d.properties.state}</div>`;
+      content += `<div>${d.properties.annual_sunlight_radiation}</div></div>`;
+      return content;
+    });
+}
+
+function handleMouseOutB(d, i, n) {
+  d3.select(n[i]).attr("fill", d =>
+    poteThresHold(d.properties.annual_sunlight_radiation)
+  );
+
+  d3.select(`#t-${d.properties.land_area_sq_km}-${i}`).remove();
+}
+
+function handleMouseOverC(d, i, n) {
+  const centroid = geoGenerator.centroid(d);
+  d3.select(n[i]).attr("fill", "white");
+
+  tooltip = graph
+    .append("foreignObject")
+    .attr("width", 120)
+    .attr("height", 54)
+    .attr("id", `t-${d.properties.land_area_sq_km}-${i}`)
+    .attr("x", centroid[0])
+    .attr("y", centroid[1] - 80)
+    .html(() => {
+      let content = `<div class="tip-style"><div>${d.properties.state}</div>`;
+      content += `<div>${d.properties.elec_produce_ratio}</div></div>`;
+      return content;
+    });
+}
+
+function handleMouseOutC(d, i, n) {
+  d3.select(n[i]).attr("fill", d =>
+    ratiThresHold(d.properties.elec_produce_ratio)
+  );
+
+  d3.select(`#t-${d.properties.land_area_sq_km}-${i}`).remove();
+}
+
+function responsivefy(svg) {
+  const container = d3.select(svg.node().parentNode),
+    width = parseInt(svg.style("width")),
+    height = parseInt(svg.style("height")),
+    aspect = width / height;
+
+  svg
+    .attr("viewBox", `0 0 ${width} ${height}`)
+    .attr("perserveAspectRatio", "xMinYMid")
+    .call(resize);
+
+  d3.select(window).on(`resize.${container.attr("id")}`, resize);
+
+  function resize() {
+    var targetWidth = parseInt(container.style("width"));
+    svg.attr("width", targetWidth - 30);
+    svg.attr("height", Math.round(targetWidth / aspect));
+  }
+}
+
+responsivefy(svg);
