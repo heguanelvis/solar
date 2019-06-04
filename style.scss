@@ -41,6 +41,12 @@ h2 {
 
 ul {
     font-size: 1.7rem;
+    a {
+        color: $color3;
+        &:hover, &:active, &:focus {
+            color: $color4;
+        }
+    }
 }
 
 .objectives {

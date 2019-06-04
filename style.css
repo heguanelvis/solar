@@ -37,6 +37,14 @@ ul {
   font-size: 1.7rem;
 }
 
+ul a {
+  color: #f77f00;
+}
+
+ul a:hover, ul a:active, ul a:focus {
+  color: #fcbf49;
+}
+
 .objectives p {
   font-size: 1.7rem;
 }

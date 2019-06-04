@@ -1,135 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <script src="https://kit.fontawesome.com/04baec709b.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Crimson+Text&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa|Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Solar Energy in the United States</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4"><i class="fas fa-sun fa-spin"></i> Geospatial Analysis of Solar Energy as Electricity Source in the United States</h1>
-            <p class="lead">Medy Xu, Eldi Rahmadan, Muhammad Aliy, Lianxin Wang, Guan He, Wangqi Li</p>
-        </div>
+      <div class="container">
+        <h1 class="display-4">
+          <i class="fas fa-sun fa-spin"></i> Geospatial Analysis of Solar Energy
+          as Electricity Source in the United States
+        </h1>
+        <p class="lead">
+          Medy Xu, Eldi Rahmadan, Muhammad Aliy, Lianxin Wang, Guan He, Wangqi
+          Li
+        </p>
+      </div>
     </div>
-    
+
     <div class="container">
-        <div class="overview">
-            <h2>Overview:</h2>
-            <ul>
-                <li>
-                    Global warming issues and the rise of renewable energy during the past decade.
-                </li>
-                <li>
-                    18% of all electricity in the United States was produced by renewable sources such as solar power.
-                </li>
-                <li>
-                    Solar power is more affordable, accessible, and prevalent in the United States than ever before.
-                </li>
-                <li>
-                    The installations of solar facilities have grown fast.
-                </li>
-                <li>
-                    The cost of solar panels and solar electric systems decreasing sharply.
-                </li>
-            </ul>
+      <div class="overview">
+        <h2>Background:</h2>
+        <ul>
+          <li>
+            Global warming contributes to the development of renewable energy.
+          </li>
+          <li>
+            In 2017, 18% of all electricity in the United States was produced by
+            renewable sources.
+          </li>
+          <li>
+            Solar power is more affordable, accessible, and prevalent in the
+            United States than ever before.
+          </li>
+          <li>
+            The number of installations of solar facilities has grown fast.
+          </li>
+          <li>
+            The cost of solar panels and solar electric systems has been
+            decreasing consistently.
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div class="objectives">
+        <h2>Objectives:</h2>
+        <p>
+          Making a set of maps that help policy makers find the patterns and
+          effective measures to boost solar energy development nationwide by
+          answering:
+        </p>
+        <ul>
+          <li>
+            What is the current status of solar energy among all other energies
+            within a specific state?
+          </li>
+          <li>
+            What is the gap between solar potential and solar electricity
+            production within a specific state?
+          </li>
+          <li>
+            What are some binding factors on developing solar energy?
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div class="data-source">
+        <h2>Data Sources:</h2>
+        <ul>
+          <li>
+            <a href="https://www.eia.gov/electricity/annual/" target="_blank"
+              >U.S. Energy Information Administration</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://catalog.data.gov/dataset/u-s-state-boundaries"
+              target="_blank"
+              >Data.Gov U.S. State Boundaries</a
+            >
+          </li>
+          <li>
+            <a href="https://www.nrel.gov/gis/data-solar.html" target="_blank"
+              >National Renewable Energy Laboratory Solar Summaries</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area"
+              >Wikipedia US States and Territories by Area</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <div class="static-maps">
+        <h2>Map Analyses:</h2>
+        <div class="map-ovewview">
+          <img src="images/overview.png" class="img-fluid" alt="Overview Map" />
         </div>
-
-        <hr>
-
-        <div class="objectives">
-            <h2>Objectives:</h2>
-            <p>
-                Making a set of maps that help policy makers find the patterns and effective measures to boost solar energy
-                development
-                nationwide by answering:
-            </p>
-            <ul>
-                <li>
-                    What is the current status of solar energy within that state?
-                </li>
-                <li>
-                    What are some binding factors on developing solar energy within different states?
-                </li>
-                <li>
-                    What is the reason that some states, albeit having great policy support or sunlight radiation, do not produce solar
-                    power up to an expected amount?
-                </li>
-            </ul>
+        <br />
+        <div class="map-production">
+          <img
+            src="images/production.png"
+            class="img-fluid"
+            alt="Production Map"
+          />
         </div>
-
-        <hr>
-
-        <div class="data-source">
-            <h2>Data Sources:</h2>
-            <ul>
-                <li><a href="https://www.eia.gov/electricity/annual/" target="_blank">U.S. Energy Information Administration</a></li>
-                <li><a href="https://catalog.data.gov/dataset/u-s-state-boundaries" target="_blank">Data.Gov U.S. State Boundaries</a></li>
-                <li><a href="https://www.nrel.gov/gis/data-solar.html" target="_blank">National Renewable Energy Laboratory Solar Summaries</a></li>
-                <li><a href="https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area">Wikipedia US States and Territories by Area</a></li>
-            </ul>
+        <br />
+        <div class="map-resource">
+          <img src="images/resource.png" class="img-fluid" alt="Resource Map" />
         </div>
-
-        <hr>
-
-        <div class="static-maps">
-            <h2>Map Analyses:</h2>
-            <div class="map-ovewview">
-                <img src="images/overview.png" class="img-fluid" alt="Overview Map">
-            </div>
-            <br>
-            <div class="map-production">
-                <img src="images/production.png" class="img-fluid" alt="Production Map">
-            </div>
-            <br>
-            <div class="map-resource">
-                <img src="images/resource.png" class="img-fluid" alt="Resource Map">
-            </div>
-            <br>
-            <div class="map-ratio">
-                <img src="images/ratio.png" class="img-fluid" alt="Ratio Map">
-            </div>
+        <br />
+        <div class="map-ratio">
+          <img src="images/ratio.png" class="img-fluid" alt="Ratio Map" />
         </div>
+      </div>
 
-        <hr>
+      <hr />
 
-        <div class="interactive-maps">
-            <h2>Interactive Maps</h2>
-            <br>
-            <div class="d-flex justify-content-around">
-                <div>
-                    <button class="btn btn-map production-btn">Electricity Production</button>
-                </div>
-                <div>
-                    <button class="btn btn-map potential-btn">Solar Potential</button>
-                </div>
-                <div>
-                    <button class="btn btn-map ratio-btn">Production Ratio</button>
-                </div>
-            </div>
-            <div id="canvas"></div>
+      <div class="interactive-maps">
+        <h2>Interactive Maps</h2>
+        <br />
+        <div class="d-flex justify-content-around">
+          <div>
+            <button class="btn btn-map production-btn">
+              Electricity Production
+            </button>
+          </div>
+          <div>
+            <button class="btn btn-map potential-btn">Solar Potential</button>
+          </div>
+          <div>
+            <button class="btn btn-map ratio-btn">Production Ratio</button>
+          </div>
         </div>
+        <div id="canvas"></div>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://d3js.org/d3.v5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
