@@ -224,4 +224,6 @@ function statesShowHide(state) {
   });
 }
 
-["ma", "nj", "nm", "wa", "fl", "tx", "wy"].forEach(e => statesShowHide(e));
+["ma", "nj", "nm", "wa", "fl", "tx", "ms", "wy"].forEach(e =>
+  statesShowHide(e)
+);
