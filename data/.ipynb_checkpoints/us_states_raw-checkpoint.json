@@ -1,17 +1,11 @@
 {
     "type": "FeatureCollection",
     "features": [
-            {
+        {
             "type": "Feature",
             "id": "01",
             "properties": {
-                "name": "Alabama",
-                "state": "Alabama",
-                "solar_electricity": 39,
-                "annual_sunlight_radiation": 1667.9671834284,
-                "land_area_sq_km": 135767,
-                "overall_sunlight_resource": 2264549.005925277,
-                "elec_produce_ratio": 0.0172219722
+                "name": "Alabama"
             },
             "geometry": {
                 "type": "Polygon",
@@ -153,17 +147,11 @@
                 ]
             }
         },
-            {
+        {
             "type": "Feature",
             "id": "02",
             "properties": {
-                "name": "Alaska",
-                "state": "Alaska",
-                "solar_electricity": 1,
-                "annual_sunlight_radiation": 559.191315,
-                "land_area_sq_km": 1723337,
-                "overall_sunlight_resource": 9636750.832181547,
-                "elec_produce_ratio": 0.0001037694
+                "name": "Alaska"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -4627,13 +4615,7 @@
             "type": "Feature",
             "id": "04",
             "properties": {
-                "name": "Arizona",
-                "state": "Arizona",
-                "solar_electricity": 5370,
-                "annual_sunlight_radiation": 2058.9834874585,
-                "land_area_sq_km": 295234,
-                "overall_sunlight_resource": 6078819.309363128,
-                "elec_produce_ratio": 0.883395233
+                "name": "Arizona"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4775,13 +4757,7 @@
             "type": "Feature",
             "id": "05",
             "properties": {
-                "name": "Arkansas",
-                "state": "Arkansas",
-                "solar_electricity": 33,
-                "annual_sunlight_radiation": 1619.4291246788,
-                "land_area_sq_km": 137732,
-                "overall_sunlight_resource": 2230472.12200262,
-                "elec_produce_ratio": 0.014795074
+                "name": "Arkansas"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4943,13 +4919,7 @@
             "type": "Feature",
             "id": "06",
             "properties": {
-                "name": "California",
-                "state": "California",
-                "solar_electricity": 27037,
-                "annual_sunlight_radiation": 1920.4936283748,
-                "land_area_sq_km": 423972,
-                "overall_sunlight_resource": 8142355.246093253,
-                "elec_produce_ratio": 3.3205379995
+                "name": "California"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5335,13 +5305,7 @@
             "type": "Feature",
             "id": "08",
             "properties": {
-                "name": "Colorado",
-                "state": "Colorado",
-                "solar_electricity": 999,
-                "annual_sunlight_radiation": 1766.2233402355,
-                "land_area_sq_km": 269601,
-                "overall_sunlight_resource": 4761755.787508354,
-                "elec_produce_ratio": 0.2097965634
+                "name": "Colorado"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5419,13 +5383,7 @@
             "type": "Feature",
             "id": "09",
             "properties": {
-                "name": "Connecticut",
-                "state": "Connecticut",
-                "solar_electricity": 344,
-                "annual_sunlight_radiation": 1415.7032996254,
-                "land_area_sq_km": 14357,
-                "overall_sunlight_resource": 203252.5227272249,
-                "elec_produce_ratio": 1.6924759181
+                "name": "Connecticut"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5503,13 +5461,7 @@
             "type": "Feature",
             "id": "10",
             "properties": {
-                "name": "Delaware",
-                "state": "Delaware",
-                "solar_electricity": 119,
-                "annual_sunlight_radiation": 1511.9445152439,
-                "land_area_sq_km": 6446,
-                "overall_sunlight_resource": 97459.9434526214,
-                "elec_produce_ratio": 1.2210144577
+                "name": "Delaware"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5575,13 +5527,7 @@
             "type": "Feature",
             "id": "11",
             "properties": {
-                "name": "District of Columbia",
-                "state": "District of Columbia",
-                "solar_electricity": 32,
-                "annual_sunlight_radiation": 1515.769875,
-                "land_area_sq_km": 177,
-                "overall_sunlight_resource": 2682.91267875,
-                "elec_produce_ratio": 11.9273356354
+                "name": "District of Columbia"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5615,13 +5561,7 @@
             "type": "Feature",
             "id": "12",
             "properties": {
-                "name": "Florida",
-                "state": "Florida",
-                "solar_electricity": 429,
-                "annual_sunlight_radiation": 1796.683419348,
-                "land_area_sq_km": 170312,
-                "overall_sunlight_resource": 3059967.4651600393,
-                "elec_produce_ratio": 0.1401975691
+                "name": "Florida"
             },
             "geometry": {
                 "type": "Polygon",
@@ -5947,13 +5887,7 @@
             "type": "Feature",
             "id": "13",
             "properties": {
-                "name": "Georgia",
-                "state": "Georgia",
-                "solar_electricity": 1076,
-                "annual_sunlight_radiation": 1692.4427586262,
-                "land_area_sq_km": 153910,
-                "overall_sunlight_resource": 2604838.6498015905,
-                "elec_produce_ratio": 0.4130774089
+                "name": "Georgia"
             },
             "geometry": {
                 "type": "Polygon",
@@ -6171,13 +6105,7 @@
             "type": "Feature",
             "id": "15",
             "properties": {
-                "name": "Hawaii",
-                "state": "Hawaii",
-                "solar_electricity": 848,
-                "annual_sunlight_radiation": 1903.4834215076,
-                "land_area_sq_km": 28313,
-                "overall_sunlight_resource": 538933.261131455,
-                "elec_produce_ratio": 1.5734786868
+                "name": "Hawaii"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -6405,13 +6333,7 @@
             "type": "Feature",
             "id": "16",
             "properties": {
-                "name": "Idaho",
-                "state": "Idaho",
-                "solar_electricity": 40,
-                "annual_sunlight_radiation": 1558.4947621137,
-                "land_area_sq_km": 216443,
-                "overall_sunlight_resource": 3373252.8179617594,
-                "elec_produce_ratio": 0.0118579905
+                "name": "Idaho"
             },
             "geometry": {
                 "type": "Polygon",
@@ -6689,13 +6611,7 @@
             "type": "Feature",
             "id": "17",
             "properties": {
-                "name": "Illinois",
-                "state": "Illinois",
-                "solar_electricity": 86,
-                "annual_sunlight_radiation": 1482.228402803,
-                "land_area_sq_km": 149995,
-                "overall_sunlight_resource": 2223268.4927843274,
-                "elec_produce_ratio": 0.0386817878
+                "name": "Illinois"
             },
             "geometry": {
                 "type": "Polygon",
@@ -6977,13 +6893,7 @@
             "type": "Feature",
             "id": "18",
             "properties": {
-                "name": "Indiana",
-                "state": "Indiana",
-                "solar_electricity": 243,
-                "annual_sunlight_radiation": 1460.696206498,
-                "land_area_sq_km": 94326,
-                "overall_sunlight_resource": 1377816.3037412644,
-                "elec_produce_ratio": 0.1763660361
+                "name": "Indiana"
             },
             "geometry": {
                 "type": "Polygon",
@@ -7181,13 +7091,7 @@
             "type": "Feature",
             "id": "19",
             "properties": {
-                "name": "Iowa",
-                "state": "Iowa",
-                "solar_electricity": 60,
-                "annual_sunlight_radiation": 1453.4757004859,
-                "land_area_sq_km": 145746,
-                "overall_sunlight_resource": 2118382.6944301827,
-                "elec_produce_ratio": 0.0283234942
+                "name": "Iowa"
             },
             "geometry": {
                 "type": "Polygon",
@@ -7401,13 +7305,7 @@
             "type": "Feature",
             "id": "20",
             "properties": {
-                "name": "Kansas",
-                "state": "Kansas",
-                "solar_electricity": 11,
-                "annual_sunlight_radiation": 1685.1326284003,
-                "land_area_sq_km": 213100,
-                "overall_sunlight_resource": 3591017.63112101,
-                "elec_produce_ratio": 0.0030631985
+                "name": "Kansas"
             },
             "geometry": {
                 "type": "Polygon",
@@ -7473,13 +7371,7 @@
             "type": "Feature",
             "id": "21",
             "properties": {
-                "name": "Kentucky",
-                "state": "Kentucky",
-                "solar_electricity": 32,
-                "annual_sunlight_radiation": 1511.8042557568,
-                "land_area_sq_km": 104656,
-                "overall_sunlight_resource": 1582193.861904841,
-                "elec_produce_ratio": 0.0202250816
+                "name": "Kentucky"
             },
             "geometry": {
                 "type": "Polygon",
@@ -7793,13 +7685,7 @@
             "type": "Feature",
             "id": "22",
             "properties": {
-                "name": "Louisiana",
-                "state": "Louisiana",
-                "solar_electricity": 191,
-                "annual_sunlight_radiation": 1698.9452796044,
-                "land_area_sq_km": 135659,
-                "overall_sunlight_resource": 2304772.176858582,
-                "elec_produce_ratio": 0.0828715315
+                "name": "Louisiana"
             },
             "geometry": {
                 "type": "Polygon",
@@ -8117,13 +8003,7 @@
             "type": "Feature",
             "id": "23",
             "properties": {
-                "name": "Maine",
-                "state": "Maine",
-                "solar_electricity": 29,
-                "annual_sunlight_radiation": 1313.593953239,
-                "land_area_sq_km": 91633,
-                "overall_sunlight_resource": 1203685.547171537,
-                "elec_produce_ratio": 0.0240926711
+                "name": "Maine"
             },
             "geometry": {
                 "type": "Polygon",
@@ -8401,13 +8281,7 @@
             "type": "Feature",
             "id": "24",
             "properties": {
-                "name": "Maryland",
-                "state": "Maryland",
-                "solar_electricity": 728,
-                "annual_sunlight_radiation": 1504.7769509442,
-                "land_area_sq_km": 32131,
-                "overall_sunlight_resource": 483499.8821078721,
-                "elec_produce_ratio": 1.505688061
+                "name": "Maryland"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -8683,13 +8557,7 @@
             "type": "Feature",
             "id": "25",
             "properties": {
-                "name": "Massachusetts",
-                "state": "Massachusetts",
-                "solar_electricity": 1863,
-                "annual_sunlight_radiation": 1392.1045174603,
-                "land_area_sq_km": 27336,
-                "overall_sunlight_resource": 380545.6908929568,
-                "elec_produce_ratio": 4.8956013551
+                "name": "Massachusetts"
             },
             "geometry": {
                 "type": "Polygon",
@@ -8843,13 +8711,7 @@
             "type": "Feature",
             "id": "26",
             "properties": {
-                "name": "Michigan",
-                "state": "Michigan",
-                "solar_electricity": 64,
-                "annual_sunlight_radiation": 1359.3721689052,
-                "land_area_sq_km": 250487,
-                "overall_sunlight_resource": 3405050.564725613,
-                "elec_produce_ratio": 0.0187956093
+                "name": "Michigan"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -9485,13 +9347,7 @@
             "type": "Feature",
             "id": "27",
             "properties": {
-                "name": "Minnesota",
-                "state": "Minnesota",
-                "solar_electricity": 47,
-                "annual_sunlight_radiation": 1354.7480210481,
-                "land_area_sq_km": 225163,
-                "overall_sunlight_resource": 3050391.286632565,
-                "elec_produce_ratio": 0.0154078594
+                "name": "Minnesota"
             },
             "geometry": {
                 "type": "Polygon",
@@ -9837,13 +9693,7 @@
             "type": "Feature",
             "id": "28",
             "properties": {
-                "name": "Mississippi",
-                "state": "Mississippi",
-                "solar_electricity": 6,
-                "annual_sunlight_radiation": 1669.6319087147,
-                "land_area_sq_km": 125438,
-                "overall_sunlight_resource": 2094352.8736536046,
-                "elec_produce_ratio": 0.0028648467
+                "name": "Mississippi"
             },
             "geometry": {
                 "type": "Polygon",
@@ -10041,13 +9891,7 @@
             "type": "Feature",
             "id": "29",
             "properties": {
-                "name": "Missouri",
-                "state": "Missouri",
-                "solar_electricity": 200,
-                "annual_sunlight_radiation": 1552.9899209285,
-                "land_area_sq_km": 180540,
-                "overall_sunlight_resource": 2803768.0032443376,
-                "elec_produce_ratio": 0.0713325781
+                "name": "Missouri"
             },
             "geometry": {
                 "type": "Polygon",
@@ -10273,13 +10117,7 @@
             "type": "Feature",
             "id": "30",
             "properties": {
-                "name": "Montana",
-                "state": "Montana",
-                "solar_electricity": 11,
-                "annual_sunlight_radiation": 1437.0572345279,
-                "land_area_sq_km": 380831,
-                "overall_sunlight_resource": 5472759.436825021,
-                "elec_produce_ratio": 0.002009955
+                "name": "Montana"
             },
             "geometry": {
                 "type": "Polygon",
@@ -10501,13 +10339,7 @@
             "type": "Feature",
             "id": "31",
             "properties": {
-                "name": "Nebraska",
-                "state": "Nebraska",
-                "solar_electricity": 7,
-                "annual_sunlight_radiation": 1339.4803958332,
-                "land_area_sq_km": 200330,
-                "overall_sunlight_resource": 2683381.076972728,
-                "elec_produce_ratio": 0.0026086492
+                "name": "Nebraska"
             },
             "geometry": {
                 "type": "Polygon",
@@ -10637,13 +10469,7 @@
             "type": "Feature",
             "id": "32",
             "properties": {
-                "name": "Nevada",
-                "state": "Nevada",
-                "solar_electricity": 3496,
-                "annual_sunlight_radiation": 1884.9412039636,
-                "land_area_sq_km": 286380,
-                "overall_sunlight_resource": 5398094.61991107,
-                "elec_produce_ratio": 0.6476359246
+                "name": "Nevada"
             },
             "geometry": {
                 "type": "Polygon",
@@ -10741,13 +10567,7 @@
             "type": "Feature",
             "id": "33",
             "properties": {
-                "name": "New Hampshire",
-                "state": "New Hampshire",
-                "solar_electricity": 52,
-                "annual_sunlight_radiation": 1342.3841409043,
-                "land_area_sq_km": 24214,
-                "overall_sunlight_resource": 325044.8958785723,
-                "elec_produce_ratio": 0.1599779005
+                "name": "New Hampshire"
             },
             "geometry": {
                 "type": "Polygon",
@@ -10873,13 +10693,7 @@
             "type": "Feature",
             "id": "34",
             "properties": {
-                "name": "New Jersey",
-                "state": "New Jersey",
-                "solar_electricity": 2220,
-                "annual_sunlight_radiation": 1464.602695912,
-                "land_area_sq_km": 22591,
-                "overall_sunlight_resource": 330868.3950334691,
-                "elec_produce_ratio": 6.7096163711
+                "name": "New Jersey"
             },
             "geometry": {
                 "type": "Polygon",
@@ -11021,13 +10835,7 @@
             "type": "Feature",
             "id": "35",
             "properties": {
-                "name": "New Mexico",
-                "state": "New Mexico",
-                "solar_electricity": 909,
-                "annual_sunlight_radiation": 2008.6255274371,
-                "land_area_sq_km": 314917,
-                "overall_sunlight_resource": 6325503.252239077,
-                "elec_produce_ratio": 0.1437039811
+                "name": "New Mexico"
             },
             "geometry": {
                 "type": "Polygon",
@@ -11109,13 +10917,7 @@
             "type": "Feature",
             "id": "36",
             "properties": {
-                "name": "New York",
-                "state": "New York",
-                "solar_electricity": 1013,
-                "annual_sunlight_radiation": 1354.8441148677,
-                "land_area_sq_km": 141297,
-                "overall_sunlight_resource": 1914354.0889846447,
-                "elec_produce_ratio": 0.5291602039
+                "name": "New York"
             },
             "geometry": {
                 "type": "Polygon",
@@ -11401,13 +11203,7 @@
             "type": "Feature",
             "id": "37",
             "properties": {
-                "name": "North Carolina",
-                "state": "North Carolina",
-                "solar_electricity": 3589,
-                "annual_sunlight_radiation": 1615.5795778501,
-                "land_area_sq_km": 139391,
-                "overall_sunlight_resource": 2251972.529361044,
-                "elec_produce_ratio": 1.5937139344
+                "name": "North Carolina"
             },
             "geometry": {
                 "type": "Polygon",
@@ -11665,13 +11461,7 @@
             "type": "Feature",
             "id": "38",
             "properties": {
-                "name": "North Dakota",
-                "state": "North Dakota",
-                "solar_electricity": 0.29,
-                "annual_sunlight_radiation": 1382.9643480545,
-                "land_area_sq_km": 183108,
-                "overall_sunlight_resource": 2532318.3584355423,
-                "elec_produce_ratio": 0.0001145196
+                "name": "North Dakota"
             },
             "geometry": {
                 "type": "Polygon",
@@ -11749,13 +11539,7 @@
             "type": "Feature",
             "id": "39",
             "properties": {
-                "name": "Ohio",
-                "state": "Ohio",
-                "solar_electricity": 173,
-                "annual_sunlight_radiation": 1422.5669934193,
-                "land_area_sq_km": 116098,
-                "overall_sunlight_resource": 1651571.828019912,
-                "elec_produce_ratio": 0.1047486988
+                "name": "Ohio"
             },
             "geometry": {
                 "type": "Polygon",
@@ -11957,13 +11741,7 @@
             "type": "Feature",
             "id": "40",
             "properties": {
-                "name": "Oklahoma",
-                "state": "Oklahoma",
-                "solar_electricity": 9,
-                "annual_sunlight_radiation": 1719.6176214953,
-                "land_area_sq_km": 181037,
-                "overall_sunlight_resource": 3113144.15342649,
-                "elec_produce_ratio": 0.002890968
+                "name": "Oklahoma"
             },
             "geometry": {
                 "type": "Polygon",
@@ -12157,13 +11935,7 @@
             "type": "Feature",
             "id": "41",
             "properties": {
-                "name": "Oregon",
-                "state": "Oregon",
-                "solar_electricity": 192,
-                "annual_sunlight_radiation": 1561.7329978144,
-                "land_area_sq_km": 254799,
-                "overall_sunlight_resource": 3979280.061101085,
-                "elec_produce_ratio": 0.0482499339
+                "name": "Oregon"
             },
             "geometry": {
                 "type": "Polygon",
@@ -12401,13 +12173,7 @@
             "type": "Feature",
             "id": "42",
             "properties": {
-                "name": "Pennsylvania",
-                "state": "Pennsylvania",
-                "solar_electricity": 361,
-                "annual_sunlight_radiation": 1391.092787993,
-                "land_area_sq_km": 119280,
-                "overall_sunlight_resource": 1659295.4775180242,
-                "elec_produce_ratio": 0.2175622153
+                "name": "Pennsylvania"
             },
             "geometry": {
                 "type": "Polygon",
@@ -12553,13 +12319,7 @@
             "type": "Feature",
             "id": "44",
             "properties": {
-                "name": "Rhode Island",
-                "state": "Rhode Island",
-                "solar_electricity": 44,
-                "annual_sunlight_radiation": 1418.8818267974,
-                "land_area_sq_km": 4001,
-                "overall_sunlight_resource": 56769.4618901656,
-                "elec_produce_ratio": 0.7750645952
+                "name": "Rhode Island"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -12639,13 +12399,7 @@
             "type": "Feature",
             "id": "45",
             "properties": {
-                "name": "South Carolina",
-                "state": "South Carolina",
-                "solar_electricity": 41,
-                "annual_sunlight_radiation": 1680.7193747133,
-                "land_area_sq_km": 82933,
-                "overall_sunlight_resource": 1393870.9990309791,
-                "elec_produce_ratio": 0.0294144867
+                "name": "South Carolina"
             },
             "geometry": {
                 "type": "Polygon",
@@ -12835,13 +12589,7 @@
             "type": "Feature",
             "id": "46",
             "properties": {
-                "name": "South Dakota",
-                "state": "South Dakota",
-                "solar_electricity": 1,
-                "annual_sunlight_radiation": 1503.0048795139,
-                "land_area_sq_km": 199729,
-                "overall_sunlight_resource": 3001936.615804292,
-                "elec_produce_ratio": 0.0003331183
+                "name": "South Dakota"
             },
             "geometry": {
                 "type": "Polygon",
@@ -12971,13 +12719,7 @@
             "type": "Feature",
             "id": "47",
             "properties": {
-                "name": "Tennessee",
-                "state": "Tennessee",
-                "solar_electricity": 164,
-                "annual_sunlight_radiation": 1565.4040103825,
-                "land_area_sq_km": 109153,
-                "overall_sunlight_resource": 1708685.4394528237,
-                "elec_produce_ratio": 0.0959802174
+                "name": "Tennessee"
             },
             "geometry": {
                 "type": "Polygon",
@@ -13163,13 +12905,7 @@
             "type": "Feature",
             "id": "48",
             "properties": {
-                "name": "Texas",
-                "state": "Texas",
-                "solar_electricity": 1122,
-                "annual_sunlight_radiation": 1839.8603147377,
-                "land_area_sq_km": 695662,
-                "overall_sunlight_resource": 12799209.062710445,
-                "elec_produce_ratio": 0.0876616668
+                "name": "Texas"
             },
             "geometry": {
                 "type": "Polygon",
@@ -13791,13 +13527,7 @@
             "type": "Feature",
             "id": "49",
             "properties": {
-                "name": "Utah",
-                "state": "Utah",
-                "solar_electricity": 1203,
-                "annual_sunlight_radiation": 1822.0112250104,
-                "land_area_sq_km": 219882,
-                "overall_sunlight_resource": 4006274.721777465,
-                "elec_produce_ratio": 0.3002789583
+                "name": "Utah"
             },
             "geometry": {
                 "type": "Polygon",
@@ -13859,13 +13589,7 @@
             "type": "Feature",
             "id": "50",
             "properties": {
-                "name": "Vermont",
-                "state": "Vermont",
-                "solar_electricity": 135,
-                "annual_sunlight_radiation": 1315.3148972056,
-                "land_area_sq_km": 24906,
-                "overall_sunlight_resource": 327592.3282980227,
-                "elec_produce_ratio": 0.4120975625
+                "name": "Vermont"
             },
             "geometry": {
                 "type": "Polygon",
@@ -13991,13 +13715,7 @@
             "type": "Feature",
             "id": "51",
             "properties": {
-                "name": "Virginia",
-                "state": "Virginia",
-                "solar_electricity": 62,
-                "annual_sunlight_radiation": 1544.949032479,
-                "land_area_sq_km": 110787,
-                "overall_sunlight_resource": 1711602.6846124888,
-                "elec_produce_ratio": 0.0362233599
+                "name": "Virginia"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -14321,13 +14039,7 @@
             "type": "Feature",
             "id": "53",
             "properties": {
-                "name": "Washington",
-                "state": "Washington",
-                "solar_electricity": 90,
-                "annual_sunlight_radiation": 1367.2711696549,
-                "land_area_sq_km": 184661,
-                "overall_sunlight_resource": 2524816.614596371,
-                "elec_produce_ratio": 0.0356461533
+                "name": "Washington"
             },
             "geometry": {
                 "type": "MultiPolygon",
@@ -14639,13 +14351,7 @@
             "type": "Feature",
             "id": "54",
             "properties": {
-                "name": "West Virginia",
-                "state": "West Virginia",
-                "solar_electricity": 6,
-                "annual_sunlight_radiation": 1441.9322104222,
-                "land_area_sq_km": 62756,
-                "overall_sunlight_resource": 904898.977972532,
-                "elec_produce_ratio": 0.0066305744
+                "name": "West Virginia"
             },
             "geometry": {
                 "type": "Polygon",
@@ -14919,13 +14625,7 @@
             "type": "Feature",
             "id": "55",
             "properties": {
-                "name": "Wisconsin",
-                "state": "Wisconsin",
-                "solar_electricity": 37,
-                "annual_sunlight_radiation": 1369.0569972051,
-                "land_area_sq_km": 169635,
-                "overall_sunlight_resource": 2322399.8372089453,
-                "elec_produce_ratio": 0.0159317958
+                "name": "Wisconsin"
             },
             "geometry": {
                 "type": "Polygon",
@@ -15239,13 +14939,7 @@
             "type": "Feature",
             "id": "56",
             "properties": {
-                "name": "Wyoming",
-                "state": "Wyoming",
-                "solar_electricity": 3,
-                "annual_sunlight_radiation": 1600.015769992,
-                "land_area_sq_km": 253335,
-                "overall_sunlight_resource": 4053399.950909279,
-                "elec_produce_ratio": 0.0007401194
+                "name": "Wyoming"
             },
             "geometry": {
                 "type": "Polygon",
