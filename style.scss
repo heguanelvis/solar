@@ -41,20 +41,18 @@ h2 {
 
 ul {
   font-size: 1.7rem;
-  a {
-    color: $color3;
-    font-weight: 700;
-    &:hover,
-    &:active,
-    &:focus {
-      color: $color4;
-    }
-  }
 }
 
 .objectives {
   p {
     font-size: 1.7rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+.data-source {
+  li {
+    color: $color3;
   }
 }
 
@@ -103,4 +101,79 @@ hr {
 
 b {
   color: $color3;
+}
+
+a {
+  color: $color3;
+  font-weight: 700;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color4;
+  }
+}
+
+.literature {
+  a {
+    font-size: 1.7rem;
+  }
+
+  .literature-box {
+    margin-top: 1.2rem;
+
+    .literature-states {
+      border-right: 1.5px solid $color1;
+      li {
+        cursor: pointer;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color3;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .literature-content {
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+.states-li {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.card {
+  margin-top: 2rem;
+
+  .card-header {
+    font-size: 1.8rem;
+    font-family: $comfortaa;
+    font-weight: 700;
+    background: rgba(234, 226, 183, 0.5);
+    border: none;
+  }
+
+  .card-body {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: rgba(234, 226, 183, 0.2);
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      font-size: 2.5rem;
+    }
+
+    padding-bottom: 0;
+  }
 }

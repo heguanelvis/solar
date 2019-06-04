@@ -4,7 +4,7 @@ const svg = d3
   .select("#canvas")
   .append("svg")
   .attr("width", 1000)
-  .attr("height", 700);
+  .attr("height", 580);
 
 const graph = svg
   .append("g")
@@ -214,3 +214,14 @@ function responsivefy(svg) {
 }
 
 responsivefy(svg);
+
+function statesShowHide(state) {
+  document.getElementById(state).addEventListener("click", () => {
+    Array.from(document.getElementsByClassName("states-li")).forEach(e =>
+      e.classList.remove("show")
+    );
+    document.getElementById(`${state}-t`).classList.add("show");
+  });
+}
+
+["ma", "nj", "nm", "wa", "fl", "tx", "wy"].forEach(e => statesShowHide(e));
